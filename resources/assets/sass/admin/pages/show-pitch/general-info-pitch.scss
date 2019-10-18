@@ -1,0 +1,27 @@
+.general-info-pitch, .general-info-inquiry {
+  .section {
+    .section-title {
+      border-bottom: 1px solid #ffd831;
+      padding: 16px 0 8px;
+
+      font-family: Roboto, sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 1.6;
+      text-align: left;
+      color: #414745;
+    }
+
+    ul.section-list {
+      margin: 8px 0;
+
+      li {
+        word-break: break-word;
+        margin-left: 24px;
+        list-style: disc;
+        line-height: 24px;
+        padding-left: 8px;
+      }
+    }
+  }
+}

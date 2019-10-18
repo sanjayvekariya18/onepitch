@@ -1,0 +1,107 @@
+@import "pages/parts";
+@import "pages/show-pitch";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+
+  &.list {
+    min-height: 100vh;
+    overflow: hidden;
+
+    main {
+      min-height: calc(100vh - 200px);
+
+      .page {
+        //height: calc(100vh - 32px);
+      }
+
+    }
+  }
+
+  main {
+    display: flex;
+    position: relative;
+
+    aside {
+      width: 256px;
+      min-width: 256px;
+      overflow-y: auto;
+      margin-bottom: 0;
+    }
+
+    section {
+      margin-bottom: 0;
+      width: 100%;
+
+      .page {
+        margin: 25px 64px 0 64px;
+        box-shadow: 0 2px 10px 0 rgba(155, 155, 155, 0.16), 0 2px 5px 0 rgba(155, 155, 155, 0.51);
+
+        .list-items {
+          height: 100%;
+
+          .col.title {
+            padding: 0;
+          }
+
+        }
+
+        .show-item,
+        .list-items {
+          position: relative;
+
+          .show-item-content {
+            //min-height: calc(100vh - 168px);
+            //height: 100%;
+          }
+
+          &.spinner {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            height: 100%;
+
+            .preloader {
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+
+              .circle {
+                border-color: #414745;
+              }
+            }
+
+          }
+        }
+
+        .left-side {
+          background: none;
+        }
+
+        .right-side,
+        .left-side-profile {
+          height: auto;
+          min-height: calc(100vh - 168px);
+        }
+
+        .right-side {
+          width: 100%;
+        }
+
+      }
+
+    }
+
+  }
+
+  footer {
+    background: url("../../img/admin/one-pitch-logo-medium.png") 24px calc(100% - 24px) no-repeat #fff;
+    background-size: 135px;
+    height: 72px;
+  }
+
+}
+

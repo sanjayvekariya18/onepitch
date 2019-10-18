@@ -1,0 +1,27 @@
+.pitch-control-buttons, .inquiry-control-buttons {
+  margin: 16px 0 32px 0;
+
+  .status {
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+    line-height: 1.15;
+    text-align: left;
+    color: #2abf8d;
+    margin-bottom: 8px;
+  }
+
+  .buttons {
+    .btn {
+      margin-left: 12px;
+      margin-right: 12px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

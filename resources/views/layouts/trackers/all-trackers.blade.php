@@ -1,0 +1,5 @@
+@include('layouts.trackers.google-adwords')
+@include('layouts.trackers.twitter')
+@include('layouts.trackers.linkedin')
+@include('layouts.trackers.salesforce')
+@include('layouts.trackers.google')

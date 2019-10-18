@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="308" height="66" viewBox="0 0 308 66">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#FFD731" d="M0 0h308v66H0z"/>
+        <path fill="#FFF" d="M260.614 23.113l8.169 8.02H242v3.733h26.783l-8.169 8.021 2.66 2.613L276 33l-12.725-12.5z"/>
+        <text fill="#414745" font-family="AkkuratPro-Bold, Akkurat Pro" font-size="16" font-weight="bold" letter-spacing="1">
+            <tspan x="24" y="39">Done with industries</tspan>
+        </text>
+    </g>
+</svg>

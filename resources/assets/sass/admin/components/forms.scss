@@ -1,0 +1,35 @@
+[type="checkbox"].filled-in {
+
+  + label {
+    padding-left: 40px;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.38;
+    letter-spacing: 0;
+    text-align: left;
+    color: #444444;
+  }
+
+  &:not(:checked) {
+    + label:after {
+      width: 24px;
+      height: 24px;
+      border: solid 2px #414745;
+      border-radius: 0;
+    }
+  }
+
+
+  &:checked {
+    + label {
+      background: url('../../../img/admin/icon-checkbox-filled.png') no-repeat;
+    }
+
+    + label:after,
+    + label:before {
+      content: normal;
+    }
+  }
+}
+
+@import "forms/inputs";

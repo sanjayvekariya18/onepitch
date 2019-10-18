@@ -1,0 +1,189 @@
+@media (max-width: $screen-xs-max) {
+  footer.page-footer {
+    background-color: #414745;
+    padding: 32px 24px 24px 24px;
+    text-align: center;
+  }
+  footer.page-footer ul.footer-links {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ffd831;
+    margin-bottom: 32px;
+  }
+  footer.page-footer ul.footer-links li {
+    display: block;
+    margin-bottom: 32px;
+    text-align: left;
+  }
+  footer.page-footer ul.footer-links li a {
+    color: #fff;
+    letter-spacing: 1.5px;
+    line-height: 1.14;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  footer.page-footer ul.social-links {
+    display: block;
+    margin: 0 0 32px 0;
+    text-align: center;
+  }
+  footer.page-footer ul.social-links li {
+    display: inline-block;
+    margin-right: 13px;
+  }
+  footer.page-footer ul.social-links li:last-child {
+    margin-right: 0;
+  }
+  footer.page-footer ul.social-links li a img {
+    width: 32px;
+    height: 32px;
+  }
+  footer.page-footer .footer-logo {
+    height: 36px;
+  }
+}
+footer {
+    &.page-footer{
+        @media (max-width: $screen-sm - 1) {
+            img{
+                &.mobile{
+                    margin-left: 0 !important;
+                }
+            }
+        }
+        @media (max-width: $screen-md - 1) {
+            img{
+                &.desktop{
+                    display: none;
+                }
+                &.mobile{
+                    width: 152px;
+                    margin-left: 16px;
+                }
+            }
+        }
+        @media (min-width: $screen-md) {
+            img{
+                &.mobile{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media (min-width: $screen-sm) {
+  footer.page-footer {
+    background-color: #414745;
+    padding: 32px 24px 24px 24px;
+  }
+  footer.page-footer ul.footer-links {
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #ffd831;
+    margin-bottom: 24px;
+  }
+  footer.page-footer ul.footer-links li {
+    display: inline-block;
+    margin: 0 12px;
+  }
+  footer.page-footer ul.footer-links li:last-child {
+    /*margin-right: 0;*/
+  }
+  footer.page-footer ul.footer-links li a {
+    font-family: AkkuratPro, Roboto, sans-serif;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 1.3px;
+    line-height: 1.17;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  footer.page-footer .footer-logo {
+    height: 32px;
+    float: left;
+  }
+  footer.page-footer ul.social-links {
+    display: inline-block;
+    float: right;
+    margin: 6px 0 -6px 0;
+  }
+  footer.page-footer ul.social-links li {
+    display: inline-block;
+    margin: 0 2px;
+  }
+  footer.page-footer ul.social-links li a img {
+    width: 32px;
+    height: 32px;
+  }
+}
+@media (min-width: $screen-md) {
+  footer.page-footer {
+    background-color: #414745;
+    min-height: 80px;
+    padding: 32px 48px 24px;
+    .col-md-2{
+        padding-left: 0;
+        padding-right: 5px;
+    }
+  }
+  footer.page-footer .footer-logo {
+    height: 32px;
+    margin-right: 0;
+    margin-left: 16px;
+    float: left;
+  }
+  footer.page-footer ul.footer-links {
+    display: block;
+    margin: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  footer.page-footer ul.footer-links li {
+    display: inline-flex;
+    /*margin-right: 16px;*/
+    line-height: 32px;
+  }
+  footer.page-footer ul.footer-links li a {
+    color: #fff;
+    letter-spacing: 1.3px;
+    line-height: 1.17;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-top: 18px;
+  }
+  footer.page-footer ul.social-links {
+    margin: 4px 0 -6px 0;
+  }
+}
+
+@media (min-width: 1320px) {
+  footer.page-footer {
+    background-color: #414745;
+    min-height: 100px;
+    padding: 32px 48px;
+  }
+  footer.page-footer .footer-logo {
+    width: 168px;
+    margin-right: 63px;
+  }
+  footer.page-footer ul.footer-links {
+  }
+  footer.page-footer ul.footer-links li {
+    margin: 0 16px;
+  }
+  footer.page-footer ul.footer-links li a {
+    letter-spacing: 1.5px;
+    line-height: 1.14;
+    font-size: 14px;
+  }
+  footer.page-footer ul.footer-links li.faq-link {
+    display: inline-block;
+  }
+  footer.page-footer ul.social-links {
+    margin: 4px 0 -8px 0;
+  }
+}

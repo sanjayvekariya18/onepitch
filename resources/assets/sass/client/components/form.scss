@@ -1,0 +1,92 @@
+.form_wrap{
+    .field{
+        input[type="text"]{
+            background-color: $yellow-light-color;
+            border: none;
+            font-family: Roboto;
+            font-size: 16px;
+            line-height: 1.5;
+            text-align: left;
+            padding: 18px 16px;
+            color: $gray-light-color;
+        }
+        &.input-filled{
+            border: 1px solid $black-color;
+            border-bottom: 4px solid $black-color;
+            input[type="text"]{
+                color: $black-color;
+            }
+        }
+    }
+    textarea{
+        background-color: $yellow-light-color;
+        border: none;
+        font-family: Roboto;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: left;
+        padding: 18px 16px;
+        color: $black-color;
+        resize: none;
+    }
+}
+textarea:-moz-placeholder {
+    color: $gray-light-color;
+}
+textarea::-webkit-input-placeholder {
+    color: $gray-light-color;
+}
+.form_wrap{
+    [type="submit"]{
+        min-width: initial;
+        color: $black-color;
+        font-family: AkkuratPro;
+        font-size: 20px;
+        padding: 16px 46px;
+        font-weight: bold;
+        line-height: 1.2;
+        letter-spacing: 1px;
+    }
+}
+.field {
+    .title:not(.floating-label) {
+        visibility: hidden;
+    }
+}
+.field.input-filled {
+    .title:not(.floating-label) {
+        visibility: visible;
+    }
+}
+.field{
+    position: relative;
+    .floating-label{ 
+        position: absolute;
+        pointer-events: none;
+        left: 16px;
+        top: 0px;
+        transition: 0s ease all;
+        color: $gray-light-color;
+        font-size: 16px;
+    }
+    &.input-filled{
+        .bottom_message{
+            display: block;
+        }
+    }
+}
+.field.input-filled.map_btn_filter {
+    .floating-label {
+        top: -1px;
+        left: 24px;
+        color: #757575;
+    }
+}
+.field.input-filled .floating-label, input:focus~.floating-label {
+    top: -30px;
+    font-family: Roboto;
+    font-size: 12px;
+    text-align: left;
+    color: $gray-light2-color;
+    position: absolute;
+}

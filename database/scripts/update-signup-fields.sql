@@ -1,0 +1,1 @@
+ALTER TABLE `users` ADD `title` VARCHAR(255) NULL AFTER `phone_number`, ADD `birthday` DATE NULL AFTER `title`;

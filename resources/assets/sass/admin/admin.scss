@@ -1,0 +1,27 @@
+
+// Bootstrap
+@import "materialize";
+//@import "~material-design-icons/iconfont/material-icons.css";
+$material-design-icons-font-path: '~material-design-icons-iconfont/dist/fonts/';
+
+@import "~material-design-icons-iconfont/src/material-design-icons";
+
+@import "pages";
+@import "components";
+
+
+.purpley-grey {
+  color: $purpley-grey;
+}
+
+//div.material-table table{
+//  table-layout: auto !important;
+//}
+
+div.material-table div.table-header{
+  background-color: #fff7d6;
+}
+
+.text-right{
+  text-align: right;
+}

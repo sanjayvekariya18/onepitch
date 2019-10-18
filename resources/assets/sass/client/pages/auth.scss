@@ -1,0 +1,341 @@
+.select-role-wrap {
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+.select-role-wrap .role-wrap {
+    padding: 64px 0 49px 0;
+    cursor: pointer;
+}
+.select-role-wrap .role-wrap .check-circle {
+    margin-bottom: 23px;
+}
+.select-role-wrap .role-wrap h4 {
+    margin: 0;
+    line-height: 32px;
+    font-size: 24px;
+    color: #414745
+}
+.select-role-wrap .role-wrap h1 {
+    margin: 0 0 4px 0;
+    line-height: 64px;
+    font-size: 56px;
+    color: #414745;
+    font-weight: bold;
+}
+.select-role-wrap .role-wrap p {
+    margin: 0;
+    line-height: 24px;
+    font-size: 16px;
+    color: #414745;
+    font-weight: bold;
+}
+
+.select-role-wrap .publicist-value-wrap {
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+.select-role-wrap .publicist-value-wrap.open {
+    transform: translateX(0);
+}
+.select-role-wrap .journalist-value-wrap {
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #ffd831;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+.select-role-wrap .journalist-value-wrap.open {
+    transform: translateX(0);
+}
+.select-role-wrap .role-value-wrap-inner {
+    position: relative;
+    height: 100%;
+}
+.select-role-wrap .role-value-wrap .role-wrap {
+    margin-left: 104px;
+    cursor: default;
+}
+.select-role-wrap .role-value-wrap .role-wrap {
+    margin-left: 104px;
+}
+.select-role-wrap .role-value-wrap .back-area {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 104px;
+    cursor: pointer;
+}
+.select-role-wrap .role-value-wrap .back-area i {
+    font-size: 44px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -22px;
+    margin-left: -22px;
+}
+.select-role-wrap .publicist-value-wrap .back-area {
+    background: #ffd831;
+}
+.select-role-wrap .publicist-value-wrap .back-area i {
+    background: #ffd831;
+    color: #fff;
+}
+.select-role-wrap .journalist-value-wrap .role-wrap {
+    margin-left: 0;
+    margin-right: 104px;
+}
+.select-role-wrap .journalist-value-wrap .back-area {
+    background: #ffffff;
+    right: 0px;
+    left: auto;
+}
+.select-role-wrap .journalist-value-wrap .back-area i {
+    background: #ffffff;
+    color: #ffd831;
+}
+.select-role-wrap .role-value-wrap ul{
+    color: #ffd831;
+    display: inline-block;
+    margin: 0;
+    margin-left: 24px;
+}
+.select-role-wrap .role-value-wrap ul li{
+    list-style: disc;
+    color: #ffd831;
+    max-width: 400px;
+    text-align: left;
+    line-height: 24px;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+.select-role-wrap .journalist-value-wrap.role-value-wrap ul li {
+    color: #ffffff;
+}
+.select-role-wrap .role-value-wrap ul li span{
+    color: #414745;
+}
+.select-role-wrap .role-wrap .companies-wrap {
+    margin: 32px auto 0;
+    text-align: center;
+}
+
+@media (max-width: $screen-sm-max) {
+    .select-role-wrap .role-value-wrap ul li{
+        max-width: 256px;
+        text-align: left;
+        line-height: 18px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    .select-role-wrap .role-wrap {
+        height: 284px;
+    }
+    .select-role-wrap .role-wrap h4 {
+        margin: 0;
+        line-height: 24px;
+        font-size: 16px;
+        color: #414745
+    }
+    .select-role-wrap .role-wrap h1 {
+        margin-top: 6px;
+        line-height: 40px;
+        font-size: 38px;
+        color: #414745;
+        font-weight: bold;
+    }
+    .select-role-wrap .role-wrap .check-circle {
+        margin-bottom: 0px;
+    }
+
+    .select-role-wrap .publicist-value-wrap {
+        position: absolute;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background: white;
+        transform: translateY(100%);
+        transition: transform 0.3s ease;
+    }
+    .select-role-wrap .publicist-value-wrap.open {
+        transform: translateY(0);
+    }
+    .select-role-wrap .journalist-value-wrap {
+        transform: translateY(100%);
+        transition: transform 0.3s ease;
+    }
+    .select-role-wrap .journalist-value-wrap.open {
+        transform: translateY(0);
+    }
+
+    .select-role-wrap .role-wrap p {
+        display: none;
+    }
+    .select-role-wrap .role-wrap .companies-wrap {
+        display: none;
+    }
+    .select-role-wrap .role-value-wrap ul{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .select-role-wrap .role-value-wrap ul li{
+        max-width: 256px;
+        text-align: left;
+        line-height: 18px;
+        font-size: 14px;
+    }
+
+    .select-role-wrap .role-value-wrap .role-wrap {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-top: 86px;
+    }
+    .select-role-wrap .role-value-wrap .back-area {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        height: 54px;
+        width: 100%;
+        cursor: pointer;
+    }
+    .select-role-wrap .role-value-wrap .back-area i:not(.mobile-only) {
+        display: none;
+    }
+}
+@media (min-width: 768px) {
+    .select-role-wrap .role-wrap {
+        padding-top: 168px;
+    }
+    .select-role-wrap .role-wrap .companies-wrap {
+        width: 272px;
+        height: 377px;
+    }
+    .select-role-wrap .role-wrap .companies-wrap img {
+        margin-top: 35px;
+        max-width: 135px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .select-role-wrap .role-wrap .companies-wrap img.bi-img {
+        max-width: 90px;
+    }
+    .select-role-wrap .role-wrap .companies-wrap img.f-img {
+        max-width: 83px;
+    }
+    .select-role-wrap .role-wrap .companies-wrap img.hp-img {
+        max-width: 115px;
+    }
+    .select-role-wrap .role-wrap .companies-wrap img.bc-img {
+        max-width: 82px;
+    }
+    .select-role-wrap .role-wrap .companies-wrap img.sb-img {
+        max-width: 110px;
+    }
+    .select-role-wrap .role-wrap .companies-wrap img.am-img {
+        max-width: 81px;
+    }
+    .select-role-wrap .role-wrap .companies-wrap img.ez-img {
+        max-width: 61px;
+    }
+    .select-role-wrap .role-wrap .companies-wrap img.ha-img {
+        max-width: 162px;
+    }
+
+    .select-role-wrap .role-value-wrap ul{
+        margin-top: 42px;
+        margin-bottom: 48px;
+    }
+    .select-role-wrap .role-value-wrap .btn.btn-white-ylw,
+    .select-role-wrap .role-value-wrap .btn.btn-white-black {
+        width: 224px;
+    }
+    .select-role-wrap .role-value-wrap .back-area i.mobile-only {
+        display: none;
+    }
+}
+@media (min-width: 992px) {
+    .select-role-wrap .role-wrap {
+        padding-top: 64px;
+    }
+    .select-role-wrap .role-wrap .companies-wrap {
+        width: 296px;
+        height: 336px;
+    }
+    .select-role-wrap .role-wrap .companies-wrap img {
+        margin-top: 29px;
+        max-width: 135px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media (min-width: 1200px) {
+    .select-role-wrap .role-wrap .companies-wrap {
+        width: 328px;
+        height: 402px;
+    }
+    .select-role-wrap .role-wrap .companies-wrap img {
+        margin-top: 34px;
+        max-width: 166px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .select-role-wrap .role-wrap .companies-wrap img.bi-img {
+        max-width: 108px;
+    }
+    .select-role-wrap .role-wrap .companies-wrap img.f-img {
+        max-width: 101px;
+    }
+    .select-role-wrap .role-wrap .companies-wrap img.hp-img {
+        max-width: 140px;
+    }
+    .select-role-wrap .role-wrap .companies-wrap img.bc-img {
+        max-width: 115px;
+    }
+    .select-role-wrap .role-wrap .companies-wrap img.sb-img {
+        max-width: 139px;
+    }
+    .select-role-wrap .role-wrap .companies-wrap img.am-img {
+        max-width: 94px;
+    }
+    .select-role-wrap .role-wrap .companies-wrap img.ez-img {
+        max-width: 77px;
+    }
+    .select-role-wrap .role-wrap .companies-wrap img.ha-img {
+        max-width: 181px;
+    }
+
+    .select-role-wrap .role-value-wrap ul{
+        margin-top: 58px;
+        margin-bottom: 72px;
+    }
+}
+
+.select-role-wrap .journalist-wrap {
+    background-color: #ffd831;
+}
+.select-role-wrap .role-wrap.journalist-wrap .companies-wrap {
+    border: solid 6px #ffffff;
+}
+.select-role-wrap .role-wrap.publicist-wrap .companies-wrap {
+    border: solid 6px #ffd831;
+}

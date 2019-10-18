@@ -1,0 +1,11 @@
+* text=auto
+*.css linguist-vendored
+*.scss linguist-vendored
+*.js linguist-vendored
+*.ttf     -text diff
+*.eot     -text diff
+*.woff    -text diff
+*.woff2   -text diff
+*.png binary
+*.jpg binary
+CHANGELOG.md export-ignore

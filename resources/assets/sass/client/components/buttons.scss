@@ -1,0 +1,133 @@
+.btn-yellow-transparent {
+  text-transform: none;
+  border: none;
+  border-bottom: 2px solid $yellow-color;
+  color: $black-color;
+  font-family: AkkuratPro, Roboto, sans-serif;
+  padding: 2px 0 2px 0;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+  background-color: transparent;
+  letter-spacing: inherit;
+
+  @media (min-width: $screen-sm) {
+    padding: 8px 0 8px 0;
+    font-size: 24px;
+  }
+
+  &:hover {
+    @extend .btn-yellow-transparent;
+  }
+}
+
+.btn-white-transparent {
+  border: none;
+  text-transform: none;
+  border-bottom: 4px solid #fff;
+  border-radius: 0;
+  padding: 8px 0 8px 0;
+  font-family: AkkuratPro, Roboto, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  color: $black-color;
+  background-color: transparent;
+
+  &:hover {
+    @extend .btn-white-transparent;
+  }
+}
+
+.btn-black-transparent {
+  border: none;
+  text-transform: none;
+  border-radius: 0;
+  padding: 8px 0 8px 0;
+  font-family: AkkuratPro, Roboto, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  color: $black-color;
+  background-color: transparent;
+  box-shadow: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    @extend .btn-black-transparent;
+  }
+
+  &.btn-sm {
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 1px;
+  }
+}
+
+.btn-white-shadow,
+.btn-white-shadow:focus {
+  font-family: AkkuratPro, Roboto, sans-serif;
+  font-size: 16px;
+  color: $black-color;
+  font-weight: bold;
+  background-color: #fff;
+  box-shadow: -4px 4px 0 0 $black-color;
+  border: solid 2px $black-color;
+  border-radius: 0;
+  line-height: 1;
+  padding: 20px 12px;
+  min-width: 184px;
+
+  @media (min-width: $screen-sm) {
+    padding: 16px 12px;
+    font-size: 26px;
+    min-width: 224px;
+    line-height: 32px;
+  }
+
+  &:hover {
+    @extend .btn-white-shadow;
+    box-shadow: -2px 2px 0 0 $black-color;
+  }
+
+  &:active {
+    @extend .btn-white-shadow;
+    box-shadow: none;
+    background-color: $black-color;
+    color: #fff;
+  }
+
+  &.btn-sm {
+    padding: 16px;
+    font-family: AkkuratPro, Roboto, sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 1;
+    min-width: auto;
+  }
+
+}
+
+.btn-white-shadow-yellow {
+  @extend .btn-white-shadow;
+  box-shadow: -4px 4px 0 0 $yellow-color;
+
+  &:hover {
+    @extend .btn-white-shadow-yellow;
+    box-shadow: -2px 2px 0 0 $yellow-color;
+  }
+
+  &:active,
+  &:focus,
+  &:active:focus  {
+    @extend .btn-white-shadow-yellow;
+    color: $black-color;
+    box-shadow: none;
+    background-color: $yellow-color;
+  }
+}
+.btn-light-gray{
+    background-color: $gray-middle-color;
+}

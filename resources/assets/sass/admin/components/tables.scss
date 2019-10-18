@@ -1,0 +1,158 @@
+.table-header {
+  height: 96px;
+  padding: 32px;
+
+  .title {
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: left;
+    color: #414745;
+  }
+
+  .sorter {
+    width: 300px;
+    float: right;
+  }
+
+}
+.table-wrapper {
+
+  &.with-header {
+    margin-top: 96px;
+    height: calc(100% - 96px);
+  }
+
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: auto;
+}
+
+table.table {
+
+  margin-top: 8px;
+
+  thead {
+    border: none;
+
+    tr {
+      th,
+      td {
+        font-family: Roboto, sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: left;
+        color: #414745;
+        padding: 8px 16px;
+
+        &:first-child {
+          padding-left: 32px;
+        }
+
+        &:last-child {
+          padding-right: 32px;
+        }
+
+        &.actions {
+          text-align: left;
+        }
+
+      }
+    }
+  }
+
+  &.highlight > tbody > tr {
+    transition: background-color .25s ease;
+
+    &:hover {
+      background-color: $table-highlight-color;
+    }
+  }
+
+  &.clickable > tbody > tr:hover {
+    cursor: pointer;
+  }
+
+  tbody {
+
+    tr {
+      height: 64px;
+
+      td {
+        padding: 0 16px;
+
+        &:first-child {
+          padding-left: 32px;
+        }
+        &:last-child {
+          padding-right: 32px;
+          text-align: right;
+        }
+
+        &.date,
+        &.status {
+          text-align: right;
+        }
+
+        &.name,
+        &.topic {
+          text-align: left;
+        }
+
+        &.name {
+          width: 160px;
+        }
+
+        &.img {
+          width: 48px;
+          padding-top: 8px;
+          padding-bottom: 8px;
+
+          .avatar {
+            position: relative;
+            background-color: $primary-color;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+
+            img {
+              border-radius: 50%;
+            }
+
+            span.initials {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              color: $primary-hover-color;
+            }
+          }
+        }
+
+        &.buttons {
+          text-align: right;
+          padding-top: 12px;
+          padding-bottom: 12px;
+          width:1%;
+          white-space:nowrap;
+
+          button {
+            &:last-child {
+              margin-right: 0;
+            }
+
+            &:first-child {
+              margin-left: 0;
+            }
+          }
+
+
+
+        }
+      }
+    }
+  }
+}

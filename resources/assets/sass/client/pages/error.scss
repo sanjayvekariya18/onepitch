@@ -1,0 +1,76 @@
+.error_page{
+    background-color: $black-color;
+    color: #fff;
+    .error_page_wrap{
+        .page_header{
+            .img_wrap{
+                @media (max-width: $screen-sm - 1) {
+                    width: 176px;
+                    margin: 32px auto 56px;
+                }
+                @media (min-width: $screen-sm) {
+                    width: 224px;
+                    margin: 64px auto 72px;
+                    text-align: center;
+                }
+                img{
+                    width: 100%;
+                }
+            }
+            .page_title{
+                font-family: AkkuratPro;
+                font-weight: bold;
+                margin: 0 auto;
+                @media (max-width: $screen-sm - 1) {
+                    font-size: 48px;
+                    line-height: 1.33;
+                    width: 214px;
+                }
+                @media (min-width: $screen-sm) {
+                    width: 248px;
+                    font-size: 56px;
+                    line-height: 1.14;
+                }
+                .vertical_separator{
+                    float: right;
+                    width: 4px;
+                    @media (max-width: $screen-sm - 1) {
+                        height: 45px;
+                    }
+                    @media (min-width: $screen-sm) {
+                        height: 47px;
+                    }
+                    background-color: #fff;
+                }
+            }
+            .line_separator{
+                width: 32px;
+                margin: 0 auto;
+                border-bottom: 4px solid $yellow-color;
+                @media (max-width: $screen-sm - 1) {
+                    padding-top: 16px;
+                }
+                @media (min-width: $screen-sm) {
+                    padding-top: 24px;
+                }
+            }
+            .bottom_text{
+                font-family: Roboto;
+                text-align: center;
+                @media (max-width: $screen-sm - 1) {
+                    font-size: 16px;
+                    line-height: 1.5;
+                    padding-top: 32px;
+                }
+                @media (min-width: $screen-sm) {
+                    padding-top: 48px;
+                    font-size: 24px;
+                    line-height: 1.33;
+                }
+            }
+        }
+    }
+    footer{
+        display: none;
+    }
+}

@@ -1,0 +1,34 @@
+.modal {
+  &.open {
+    display: block;
+    z-index: 2003;
+  }
+
+  p {
+    line-height: 20px;
+  }
+
+  .modal-content {
+    background-color: #fff;
+    padding: 0 0 24px;
+  }
+
+  .modal-footer {
+    background-color: #fff;
+
+    .btn {
+      min-width: 160px;
+      margin: 12px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+    }
+  }
+
+}

@@ -1,0 +1,110 @@
+.pitch-show, .inquiry-show {
+  //height: 100%;
+
+  div.content {
+    display: flex;
+
+    .right-side {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+      @import "show-pitch/header-side";
+      @import "show-pitch/body-side";
+
+      .pitches-title, .inquiries-title {
+        h4 {
+          padding: 0 32px 16px;
+          font-family: Roboto, sans-serif;
+          font-size: 15px;
+          font-weight: 500;
+          line-height: 1.6;
+          text-align: left;
+          color: #414745;
+        }
+      }
+
+      .pitch-event-component, .inquiry-event-component {
+        margin-top: 8px;
+
+        .title {
+          font-family: Roboto, sans-serif;
+          font-size: 15px;
+          font-weight: 500;
+          line-height: 1.6;
+          text-align: left;
+          color: #414745;
+        }
+
+        .information {
+          margin-top: 8px;
+
+          .line {
+            font-family: Roboto, sans-serif;
+            font-size: 15px;
+            line-height: 1.6;
+            text-align: left;
+            color: #414745;
+          }
+        }
+      }
+
+      @import "show-pitch/general-info-pitch";
+
+      .body-side.pitches-list, .body-side.inquiries-list {
+        position: relative;
+        overflow-y: hidden;
+        height: 100%;
+
+        table {
+          tr {
+
+            height: 74px;
+
+            &:nth-child(odd) {
+              background-color: #f4f5f5;
+            }
+
+            &:hover {
+              cursor: pointer;
+              background-color: #fff7d6;
+            }
+
+            td {
+              padding: 16px 0;
+              font-family: Roboto, sans-serif;
+              font-size: 15px;
+              line-height: 1.2;
+              text-align: left;
+              color: #414745;
+              vertical-align: top;
+
+              .id {
+                margin-bottom: 8px;
+              }
+
+              .status {
+                font-family: Roboto,sans-serif;
+                font-size: 12px;
+                line-height: 1.25;
+                text-align: left;
+                color: #2abf8d;
+              }
+
+              &:first-child {
+                padding-left: 32px;
+              }
+
+              &:last-child {
+                text-align: right;
+                padding-right: 32px;
+                color: #9b9b9b;
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
